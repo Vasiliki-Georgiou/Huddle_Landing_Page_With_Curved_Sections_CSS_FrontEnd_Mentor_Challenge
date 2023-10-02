@@ -123,15 +123,21 @@ main {
 }
 
 main section {
-    margin-top: 60px;
-    padding: 70px 30px 50px 30px;
+    padding: 170px 30px 50px 30px;
+    position: relative;
 }
 
 main .grow-together {
     width: 100%;
-    background: url(images/bg-section-top-mobile-1.svg) no-repeat, url(images/bg-section-bottom-mobile-1.svg) no-repeat;
-    background-position: top center, bottom center ;
-    background-size: cover;
+    background: url(images/bg-section-top-mobile-2.svg) no-repeat;
+    background-position: top;
+    background-size: cover;  
+}
+
+main .flowing-conversations {
+    background: url(images/bg-section-bottom-mobile-1.svg) no-repeat;
+    background-position: top;
+    background-size: contain;
 }
 
 .grow-together img,
@@ -142,8 +148,16 @@ main .grow-together {
 }
 
 main .your-users {
-    background: url(images/bg-section-top-mobile-2.svg) no-repeat, url(images/bg-section-bottom-mobile-2.svg) no-repeat;
-    background-position: top center, bottom center;
+    width: 100%;
+    background: url(images/bg-section-top-mobile-2.svg) no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+main .subscribe {
+    width: 100%;
+    background: url(images/bg-section-bottom-mobile-2.svg) no-repeat;
+    background-position: top;
     background-size: cover;
 }
 
