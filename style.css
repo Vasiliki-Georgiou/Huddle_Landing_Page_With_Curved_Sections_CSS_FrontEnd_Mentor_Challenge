@@ -48,6 +48,11 @@ button {
     cursor: pointer;
 }
 
+button:active {
+    background-color: var(--primary-light-pink);
+    opacity: 0.9;
+}
+
 /* Header Styles */
 
 header {
@@ -74,6 +79,10 @@ header .logo {
    background-color: #fff;
    font-weight: 400;
    padding: 5px;
+}
+
+.logo button:active {
+   opacity: 0.6;
 }
 
 header .product-presentation {
@@ -228,6 +237,26 @@ footer .newsletter h4 {
     margin: 32px 0 16px 0;
     border-radius: 12px;
     border: none;
+    cursor: pointer;
+}
+
+.newsletter input:focus {
+    outline: none;
+}
+
+.newsletter input:invalid {
+    border: 1px solid var(--primary-light-red);
+    margin-bottom: 5px;
+}
+
+input:invalid ~ small {
+    display: inline-block;
+}
+
+.newsletter small {
+    display: none;
+    color: var(--primary-light-red);
+    margin-bottom: 10px;
 }
 
 .newsletter button {
@@ -247,13 +276,25 @@ footer .social-media {
     margin-top: 30px;
 }
 
-.social-media i {
-    padding: 8px;
-    width: 30px;
+.social-media a {
+    margin: 5px;
+    text-decoration: none;
+    padding: 5px;
+    text-align: center;
 }
 
-.social-media i:nth-child(odd) {
-    background-color: #fff;
+.social-media a:nth-child(odd) {
     color: var(--neutral-very-dark-cyan);
-    border-radius: 8px;
+    border-radius: 3px;
+    background-color: #fff;
 }
+
+.social-media a:active {
+    background-color: hsl(191, 94%, 49%, 1);
+}
+
+.social-media i {
+    width: 20px;
+}
+
+
