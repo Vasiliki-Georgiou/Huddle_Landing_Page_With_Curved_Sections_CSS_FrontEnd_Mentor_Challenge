@@ -45,6 +45,7 @@ button {
     font-family: inherit;
     font-weight: 700;
     width: 50%;
+    cursor: pointer;
 }
 
 /* Header Styles */
@@ -58,7 +59,7 @@ header {
 header .logo {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     padding: 0 20px;
 }
 
@@ -72,6 +73,7 @@ header .logo {
    color: var(--primary-pink);
    background-color: #fff;
    font-weight: 400;
+   padding: 5px;
 }
 
 header .product-presentation {
@@ -122,22 +124,39 @@ main {
     text-align: center;
 }
 
+.background-image1,
+.background-image2,
+.background-image3,
+.background-image4,
+.background-image5 {
+    width: 100%;
+    height: 200px;
+    background-color: lightgray;
+}
+
 main section {
-    padding: 170px 30px 50px 30px;
+    padding: 50px 30px;
     position: relative;
+}
+
+.background-image1 {
+    background: url(images/bg-section-top-mobile-1.svg) no-repeat;
+    background-size: 100%;
+    background-position: bottom;
 }
 
 main .grow-together {
     width: 100%;
-    background: url(images/bg-section-top-mobile-2.svg) no-repeat;
-    background-position: top;
-    background-size: cover;  
+    background-color: var(--neutral-very-pale-blue);
+}
+
+.background-image2 {
+    background: url(images/bg-section-bottom-mobile-1.svg) no-repeat;
+    background-size: 100%;
 }
 
 main .flowing-conversations {
-    background: url(images/bg-section-bottom-mobile-1.svg) no-repeat;
-    background-position: top;
-    background-size: contain;
+    width: 100%;
 }
 
 .grow-together img,
@@ -147,18 +166,24 @@ main .flowing-conversations {
     margin-bottom: 50px;
 }
 
+.background-image3 {
+    background: url(images/bg-section-top-mobile-2.svg) no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+}
+
 main .your-users {
     width: 100%;
-    background: url(images/bg-section-top-mobile-2.svg) no-repeat;
-    background-position: top;
-    background-size: cover;
+    background-color: var(--neutral-very-pale-blue);
+}
+
+.background-image4 {
+    background: url(images/bg-section-bottom-mobile-2.svg) no-repeat;
+    background-size: 100%;
 }
 
 main .subscribe {
     width: 100%;
-    background: url(images/bg-section-bottom-mobile-2.svg) no-repeat;
-    background-position: top;
-    background-size: cover;
 }
 
 main .subscribe button {
@@ -167,11 +192,19 @@ main .subscribe button {
 
 /* Footer styles */
 
+.background-image5 {
+    background: url(images/bg-footer-top-mobile.svg) no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+    transform: translateY(10px);
+    z-index: -2;
+}
+
 footer {
     width: 100%;
     background-color: var(--neutral-very-dark-cyan);
     color: var(--neutral-very-pale-blue);
-    padding: 30px;
+    padding: 70px 30px 0 30px;
 }
 
 footer div {
