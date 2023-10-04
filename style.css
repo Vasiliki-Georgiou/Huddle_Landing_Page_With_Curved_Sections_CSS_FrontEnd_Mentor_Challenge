@@ -140,7 +140,6 @@ main {
 .background-image5 {
     width: 100%;
     height: 200px;
-    background-color: lightgray;
 }
 
 main section {
@@ -295,6 +294,95 @@ footer .social-media {
 
 .social-media i {
     width: 20px;
+}
+
+/* Media Query Styles */
+
+@media (min-width: 1024px) {
+    button {
+        width: 25%;
+    }
+
+    .logo img {
+        width: 20%;
+    }
+
+    .logo button {
+        width: 15%;
+     }
+
+     header .product-presentation h1,
+     header .product-presentation p {
+        margin: 70px 150px 0 150px;
+    }
+
+    .product-presentation {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product-presentation img {
+        width: 50%;
+    }
+
+    header .stats {
+        display: flex;
+       justify-content: space-evenly;
+    }
+
+    main {
+        text-align: left;
+    }
+
+    main .background-image1 {
+        background: url(images/bg-section-top-desktop-1.svg) no-repeat;
+        background-size: 100%;
+        background-position: bottom;
+    }
+
+    main section:not(:last-child) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main section div {
+        margin: 0 100px;
+    }
+
+    .grow-together div:first-child,
+    .your-users div:first-child {
+        order: 2;
+    }
+
+    .background-image2 {
+        background: url(images/bg-section-bottom-desktop-1.svg) no-repeat;
+        background-size: 100%;
+    }
+
+    .background-image3 {
+        background: url(images/bg-section-top-desktop-2.svg) no-repeat;
+        background-size: 100%;
+        background-position: bottom;
+    }
+
+    .background-image4 {
+        background: url(images/bg-section-bottom-desktop-2.svg) no-repeat;
+        background-size: 100%;
+    }
+
+    .subscribe {
+        text-align: center;
+    }
+
+    .background-image5 {
+        background: url(images/bg-footer-top-desktop.svg) no-repeat;
+        background-position: bottom;
+        background-size: 100%;
+    }
+    
 }
 
 
