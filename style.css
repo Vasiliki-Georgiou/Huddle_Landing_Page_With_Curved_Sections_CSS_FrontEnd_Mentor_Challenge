@@ -139,7 +139,7 @@ main {
 .background-image4,
 .background-image5 {
     width: 100%;
-    height: 200px;
+    height: 250px;
 }
 
 main section {
@@ -245,7 +245,6 @@ footer .newsletter h4 {
 
 .newsletter input:invalid {
     border: 1px solid var(--primary-light-red);
-    margin-bottom: 5px;
 }
 
 input:invalid ~ small {
@@ -256,6 +255,10 @@ input:invalid ~ small {
     display: none;
     color: var(--primary-light-red);
     margin-bottom: 10px;
+}
+
+.newsletter input:invalid ~ button {
+    margin-left: 0;
 }
 
 .newsletter button {
@@ -382,7 +385,33 @@ footer .social-media {
         background-position: bottom;
         background-size: 100%;
     }
-    
+
+    footer {
+        display: flex;
+    }
+
+    footer div {
+        margin: 0 80px 30px 80px;
+    }
+
+    footer .newsletter {
+        order: 2;
+    }
+
+    footer .social-media {
+        margin-left: 0;
+    }
+
+    footer .newsletter input {
+        width: 60%; 
+        display: inline;
+        margin-top: 20px;
+    }
+
+    .newsletter button {
+        margin-left: 15px;
+        width: 30%;
+    }   
 }
 
 
